@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Aurelia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hotel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo hotelu">
+        </div>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+        <ul class="nav-list" id="nav-list" style="margin-left: 40vw;"> 
+            <li><a href="#rooms">Pokoje & Ceník</a></li>
+            <li><a href="#reservation">Rezervace</a></li>
+            <li><a href="#reviews">Recenze</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="banner">
+        <img src=img/banner.jpg alt="Banner hotelu">
+        <div class="banner-text">
+            <h1>Hotel Aurelia</h1>
+            <p>Váš klid v srdci elegance.</p>
+        </div>
+    </header>
+    <section class="about-section" id="about">
+        <h2>O nás</h2>
+        <div class="about-wrap">
+            <div class="about-text">
+                <p>
+                    Hotel Aurelia je rodinný hotel v samém srdci Prahy, kde se snoubí pohodlí, čistota a osobní přístup.
+                    Našim hostům nabízíme moderní pokoje, vydatné snídaně a individuální péči, která
+                    zaručí příjemný pobyt jak pro páry, tak pro rodiny i jednotlivce. <br>Název "Aurelia", inspirovaný
+                    latinským slovem pro "zlatou", odráží naši filozofii: poskytovat služby s nadstandardní péčí a
+                    vytvářet atmosféru, ve které se každý host cítí jako doma – jen o něco lépe.
+                </p>
+                <p>
+                    Dbáme na klidné prostředí, čistotu i vstřícnost personálu. Těšíme se na vaši návštěvu a věříme, že
+                    se budete rádi vracet!
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="img/praha.jpg" alt="Interiér hotelu">
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="countdown-section">
+            <div class="countdown">
+                <span class="countdown-title">Last minute sleva na ubytování!</span>
+                <span id="countdown"></span>
+                <span class="sleva">10 % sleva na všechny pobyty rezervované do uvedeného času!</span>
+            </div>
+        </section>
+
+        <section id="rooms" class="rooms-section">
+            <h2>Pokoje & Ceník</h2>
+            <div class="rooms">
+
+                <!-- Pokoj 1 -->
+                <div class="room-block short">
+                    <div class="room-img-carousel square">
+                        <button class="img-arrow left" aria-label="Předchozí obrázek">&lt;</button>
+                        <img src="img/deluxe1.jpg" class="slider-img" data-images='[
+                 "img/deluxe1.jpg",
+                 "img/deluxe2.jpg",
+                 "img/deluxe3.jpg"
+                 ]' alt="Pokoj Deluxe">
+                        <button class="img-arrow right" aria-label="Další obrázek">&gt;</button>
+                    </div>
+                    <div class="room-content">
+                        <h3>Pokoj Deluxe</h3>
+                        <p>Pokoj Deluxe v hotelu Aurelia je ideální volbou pro ty, kteří hledají kombinaci komfortu,
+                            elegance a klidného prostředí. Dopřejte si ubytování s vyšším standardem.
+                        </p>
+                        <div class="room-price">1 950 Kč / noc</div>
+                    </div>
+                </div>
+                <!-- Pokoj 2 -->
+                <div class="room-block short">
+                    <div class="room-img-carousel square">
+                        <button class="img-arrow left" aria-label="Předchozí obrázek">&lt;</button>
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=420&q=80"
+                            class="slider-img" data-images='[
+                 "img/standard1.jpg",
+                 "img/standard2.jpg",
+                 "img/standard3.jpg"
+                 ]' alt="Pokoj Standard">
+                        <button class="img-arrow right" aria-label="Další obrázek">&gt;</button>
+                    </div>
+                    <div class="room-content">
+                        <h3>Pokoj Standard</h3>
+                        <p>Pokoj Standard nabízí ideální zázemí pro odpočinek po dni plném zážitků. Světlý interiér,
+                            kvalitní postel a klidná atmosféra vám zajistí příjemný pobyt, ať už cestujete služebně nebo
+                            za relaxací.</p>
+                        <div class="room-price">1 250 Kč / noc</div>
+                    </div>
+                </div>
+                <!-- Pokoj 3 -->
+                <div class="room-block short">
+                    <div class="room-img-carousel square">
+                        <button class="img-arrow left" aria-label="Předchozí obrázek">&lt;</button>
+                        <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=420&q=80"
+                            class="slider-img" data-images='[
+                 "img/rodina1.jpg",
+                 "img/rodina2.jpg",
+                 "img/rodina3.jpg"
+                 ]' alt="Apartmá pro rodiny">
+                        <button class="img-arrow right" aria-label="Další obrázek">&gt;</button>
+                    </div>
+                    <div class="room-content">
+                        <h3>Apartmá pro rodiny</h3>
+                        <p>Náš rodinný apartmán je ideální volbou pro hosty, kteří cestují s dětmi nebo potřebují více
+                            místa. Nabízí oddělenou ložnici, obývací část s rozkládací pohovkou a plně vybavené zázemí
+                            pro pohodlný pobyt všech členů rodiny.</p>
+                        <div class="room-price">2 350 Kč / noc</div>
+                    </div>
+                </div>
+                <!-- Pokoj 4 -->
+                <div class="room-block short">
+                    <div class="room-img-carousel square">
+                        <button class="img-arrow left" aria-label="Předchozí obrázek">&lt;</button>
+                        <img src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?auto=format&fit=crop&w=420&q=80"
+                            class="slider-img" data-images='[
+                 "img/romantika1.jpg",
+                 "img/romantika3.jpg",
+                 "img/romantika2.jpg"
+                 ]' alt="Romantické apartmá">
+                        <button class="img-arrow right" aria-label="Další obrázek">&gt;</button>
+                    </div>
+                    <div class="room-content">
+                        <h3>Romantické apartmá</h3>
+                        <p>Romantický apartmán je stvořený pro nezapomenutelné chvíle ve dvou. Elegantní interiér, měkké
+                            osvětlení, pohodlná postel a soukromá atmosféra vytvářejí dokonalé prostředí pro odpočinek i
+                            romantiku.</p>
+                        <div class="room-price">2 950 Kč / noc</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation-section">
+            <h2>Rezervace</h2>
+            <form class="reservation-form" method="POST" action="hotel.php">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Vaše jméno" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                    <select name="room" required>
+                        <option value="" disabled selected>Vyberte pokoj</option>
+                        <option value="deluxe">Pokoj Deluxe</option>
+                        <option value="standard">Pokoj Standard</option>
+                        <option value="apartma">Apartmá pro rodiny</option>
+                        <option value="romantik">Romantické apartmá</option>
+                    </select>
+                    <input type="date" name="from" required>
+                    <input type="date" name="to" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="msg" placeholder="Poznámka (nepovinné)"></textarea>
+                </div>
+                <button type="submit">Odeslat rezervaci</button>
+            </form>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <h2>Recenze hostů</h2>
+            <div class="reviews">
+                <div class="review good">
+                    <strong>Petr H.</strong>
+                    <div class="stars">★★★★★</div>
+                    <p>Skvělé služby, vynikající snídaně, čistý pokoj. V okolí také spoustu památek a úžasných
+                        restaurací, lokalita je naprosto ideální. Určite přijedeme znovu!</p>
+                </div>
+                <div class="review good">
+                    <strong>Lenka D.</strong>
+                    <div class="stars">★★★★☆</div>
+                    <p>Krásné apartmá s výhledem na Pražský hrad, doporučuji pro páry.</p>
+                </div>
+                <div class="review good">
+                    <strong>Jana S.</strong>
+                    <div class="stars">★★★★★</div>
+                    <p>Velmi příjemné prostředí i personál, pohodlná postel, klidné místo.</p>
+                </div>
+                <div class="review neutral">
+                    <strong>Roman P.</strong>
+                    <div class="stars">★★★☆☆</div>
+                    <p>Pěkný pokoj, parkování bylo trochu problém, jinak vše ok.</p>
+                </div>
+                <div class="review neutral">
+                    <strong>Pavel L.</strong>
+                    <div class="stars">★★★☆☆</div>
+                    <p>Snídaně byly fajn, ale mohl být trochu lepší výběr pečiva, jinak vše naprosto vpořádku.</p>
+                </div>
+                <div class="review bad">
+                    <strong>Gabriela S.</strong>
+                    <div class="stars">★★☆☆☆</div>
+                    <p>Hluk z ulice v noci, ale personál ochotný pomoci.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2>Nejčastější otázky</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">Můžu zrušit rezervaci zdarma?</button>
+                    <div class="faq-answer">Ano, rezervaci lze bezplatně zrušit do 2 dnů před příjezdem.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Je wifi zdarma?</button>
+                    <div class="faq-answer">Ve všech prostorách hotelu je vysokorychlostní wifi zdarma.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Je možné parkovat přímo u hotelu?</button>
+                    <div class="faq-answer">Ano, bezplatné parkování je přímo před hotelem. Kapacita je však omezená.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Lze ubytovat domácí mazlíčky?</button>
+                    <div class="faq-answer">Po domluvě je možné ubytovat psa nebo kočku za 150 Kč/noc.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Od kolika hodin je možné check-in?</button>
+                    <div class="faq-answer">Check-in je možný od 14:00. Pokud potřebujete dřívější příjezd, zavolejte
+                        nám.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Dá se platit kartou?</button>
+                    <div class="faq-answer">Ano, přijímáme všechny běžné platební karty.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Je v ceně snídaně?</button>
+                    <div class="faq-answer">Ano, snídaně formou bufetu je již zahrnuta v ceně ubytování.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 style="text-align: center;">Kontakt & Mapa</h2>
+            <div class="contact-map-wrap squares">
+                <div class="square-contact">
+                    <div><strong>Telefon:</strong> +420 777 562 127</div><br><br>
+                    <div><strong>Email:</strong> info@hotelaurelia.cz</div><br><br>
+                    <div><strong>Adresa:</strong> Na Kampě 496/4 11800 Praha 1 - Malá Strana, Česko</div>
+                </div>
+                <div class="square-map">
+                    <iframe src="https://mapy.com/s/cefepodozu" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Hotel Aurelia | Závěrečná práce PRO | MMK 3. ročník
+    </footer>
+    <script>
+        // Menu
+        const navToggle = document.getElementById('nav-toggle');
+        const navList = document.getElementById('nav-list');
+        navToggle.addEventListener('click', () => navList.classList.toggle('open'));
+        document.querySelectorAll('.nav-list a').forEach(link => link.onclick = () => navList.classList.remove('open'));
+
+        // Countdown
+        function updateCountdown() {
+            const deadline = new Date("2025-06-15T23:59:59");
+            const now = new Date();
+            let left = deadline - now;
+            if (left > 0) {
+                let d = Math.floor(left / (1000 * 60 * 60 * 24));
+                let h = Math.floor((left / (1000 * 60 * 60)) % 24);
+                let m = Math.floor((left / (1000 * 60)) % 60);
+                let s = Math.floor((left / 1000) % 60);
+                document.getElementById('countdown').textContent = `${d} dní ${h} h ${m} min ${s} s`;
+            } else {
+                document.getElementById('countdown').textContent = "Sleva vypršela!";
+            }
+        }
+        setInterval(updateCountdown, 1000); updateCountdown();
+
+        // Slider pro každý pokoj
+        document.querySelectorAll('.room-block').forEach(block => {
+            const img = block.querySelector('.slider-img');
+            const arrLeft = block.querySelector('.img-arrow.left');
+            const arrRight = block.querySelector('.img-arrow.right');
+            const images = JSON.parse(img.getAttribute('data-images'));
+            let idx = 0; img.src = images[idx];
+            arrLeft.addEventListener('click', () => {
+                idx = (idx - 1 + images.length) % images.length;
+                img.src = images[idx];
+            });
+            arrRight.addEventListener('click', () => {
+                idx = (idx + 1) % images.length;
+                img.src = images[idx];
+            });
+        });
+
+        // FAQ akordeon
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', function () {
+                const item = this.closest('.faq-item');
+                document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) { i.classList.remove('open'); } });
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
